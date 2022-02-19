@@ -20,8 +20,5 @@ function e()
 
 function now()
 {
-	//var now_date = Date.now();
-
 	outlet(0, Date().toLocaleTimeString("en-US").split(/:| /));
-	//outlet(0, Date.now());
 }
