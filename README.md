@@ -1,2 +1,3 @@
 # ejw-max-msp
- Max MSP externals
+
+A collection of useful Max MSP externals
