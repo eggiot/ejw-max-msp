@@ -40,6 +40,18 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"patching_rect" : [ 52.0, 60.0, 29.5, 22.0 ],
+					"text" : "t l b"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-44",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -54,7 +66,7 @@
 				"box" : 				{
 					"comment" : "Messages for plot~",
 					"id" : "obj-41",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -114,12 +126,12 @@
 				"box" : 				{
 					"comment" : "Thickness of lines in pixels",
 					"id" : "obj-32",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 270.0, 45.0, 30.0, 30.0 ]
+					"patching_rect" : [ 269.0, 21.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -127,24 +139,11 @@
 				"box" : 				{
 					"comment" : "Data for plot~",
 					"id" : "obj-5",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 51.0, 127.0, 30.0, 30.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"comment" : "Bang to output messages for plot~",
-					"id" : "obj-4",
-					"index" : 0,
-					"maxclass" : "inlet",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 201.0, 45.0, 30.0, 30.0 ]
+					"patching_rect" : [ 47.0, 231.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -152,12 +151,12 @@
 				"box" : 				{
 					"comment" : "Barcode list",
 					"id" : "obj-3",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 51.0, 45.0, 30.0, 30.0 ]
+					"patching_rect" : [ 52.0, 21.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -180,7 +179,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 51.0, 89.0, 116.0, 22.0 ],
+					"patching_rect" : [ 51.0, 130.0, 116.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"filename" : "ejw.input.ean13.js",
 						"parameter_enable" : 0
@@ -208,7 +207,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-2", 0 ],
+					"destination" : [ "obj-6", 0 ],
 					"source" : [ "obj-3", 0 ]
 				}
 
@@ -216,7 +215,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-35", 0 ],
-					"midpoints" : [ 279.5, 199.0, 215.5, 199.0 ],
+					"midpoints" : [ 278.5, 199.0, 215.5, 199.0 ],
 					"source" : [ "obj-32", 0 ]
 				}
 
@@ -269,13 +268,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-33", 0 ],
-					"source" : [ "obj-4", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-41", 0 ],
 					"midpoints" : [ 455.5, 265.0, 215.5, 265.0 ],
 					"source" : [ "obj-40", 0 ]
@@ -290,16 +282,22 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "ejw.input.ean13.js",
-				"bootpath" : "~/Externals/Max MSP/ejw-max-msp/inputs/barcode",
-				"patcherrelativepath" : ".",
-				"type" : "TEXT",
-				"implicit" : 1
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"source" : [ "obj-6", 0 ]
+				}
+
 			}
- ],
-		"autosave" : 0
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-33", 0 ],
+					"midpoints" : [ 72.0, 86.5, 210.5, 86.5 ],
+					"source" : [ "obj-6", 1 ]
+				}
+
+			}
+ ]
 	}
 
 }
