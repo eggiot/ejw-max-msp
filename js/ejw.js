@@ -22,3 +22,8 @@ function now()
 {
 	outlet(0, Date().toLocaleTimeString("en-US").split(/:| /));
 }
+
+function chr(v)
+{
+	outlet(0, String.fromCharCode(v));
+}
