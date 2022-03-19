@@ -185,7 +185,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "Character",
 					"id" : "obj-8",
 					"index" : 0,
 					"maxclass" : "outlet",
@@ -197,7 +197,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "Character code",
 					"id" : "obj-7",
 					"index" : 0,
 					"maxclass" : "inlet",
