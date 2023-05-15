@@ -114,10 +114,10 @@
 				"box" : 				{
 					"id" : "obj-2",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 805.0, 194.0, 165.0, 22.0 ],
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 659.0, 199.0, 165.0, 22.0 ],
 					"text" : "ejw.pronunciation.get_vowels"
 				}
 
@@ -131,7 +131,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 805.0, 145.0, 30.0, 30.0 ]
+					"patching_rect" : [ 659.0, 150.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -146,7 +146,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
-					"source" : [ "obj-2", 0 ]
+					"source" : [ "obj-2", 1 ]
 				}
 
 			}
@@ -194,7 +194,21 @@
 			}
  ],
 		"dependency_cache" : [ 			{
+				"name" : "ejw.pronunciation.get_clusters.maxpat",
+				"bootpath" : "~/Externals/Max MSP/ejw-max-msp/data/pronunciation",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "ejw.pronunciation.get_vowels.maxpat",
+				"bootpath" : "~/Externals/Max MSP/ejw-max-msp/data/pronunciation",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ejw.pronunciation.is_vowel.maxpat",
 				"bootpath" : "~/Externals/Max MSP/ejw-max-msp/data/pronunciation",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
