@@ -1,4 +1,4 @@
-var separator = " ";
+var separator = "";
 
 function upper(s)
 {
@@ -22,4 +22,21 @@ function join_with_separator()
 		argument_array[i] = arguments[i];
 	}
 	outlet(0, argument_array.join(separator));
+}
+
+function ecils()
+{
+ 	var str = arguments[0];
+ 	var numChars = arguments[1];
+ 	// Check if numChars is greater than the length of the string
+ 	if (numChars >= str.length) {
+		outlet(0, '');
+	}
+	// Return the substring from the beginning to the end minus numChars characters
+	outlet(0, str.substring(0, str.length - numChars));
+}
+
+function split()
+{
+	outlet(0, arguments[0].split(""));
 }

@@ -40,122 +40,83 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"comment" : "String",
-					"id" : "obj-22",
+					"comment" : "",
+					"id" : "obj-546",
 					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 814.0, 303.0, 30.0, 30.0 ]
+					"patching_rect" : [ 75.0, 201.0, 30.0, 30.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-11",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"comment" : "",
+					"id" : "obj-545",
+					"index" : 0,
+					"maxclass" : "inlet",
+					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 814.0, 216.0, 160.0, 22.0 ],
-					"text" : "prepend join_with_separator"
+					"patching_rect" : [ 75.0, 43.0, 30.0, 30.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-10",
+					"id" : "obj-542",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 814.0, 262.0, 83.0, 22.0 ],
+					"patching_rect" : [ 75.0, 89.5, 199.0, 22.0 ],
+					"text" : "prepend removeAdjacentDuplicates"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-541",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 75.0, 144.0, 68.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"filename" : "ejw.string.js",
+						"filename" : "ejw.list.js",
 						"parameter_enable" : 0
 					}
 ,
-					"text" : "js ejw.string.js"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-5",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 985.0, 216.0, 119.0, 22.0 ],
-					"text" : "setprop separator $1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"comment" : "Separator (default: empty)",
-					"id" : "obj-2",
-					"index" : 0,
-					"maxclass" : "inlet",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 985.0, 159.0, 30.0, 30.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"comment" : "List",
-					"id" : "obj-1",
-					"index" : 0,
-					"maxclass" : "inlet",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 814.0, 159.0, 30.0, 30.0 ]
+					"text" : "js ejw.list.js"
 				}
 
 			}
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-11", 0 ],
-					"source" : [ "obj-1", 0 ]
+					"destination" : [ "obj-546", 0 ],
+					"source" : [ "obj-541", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-22", 0 ],
-					"source" : [ "obj-10", 0 ]
+					"destination" : [ "obj-541", 0 ],
+					"source" : [ "obj-542", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-10", 0 ],
-					"source" : [ "obj-11", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-5", 0 ],
-					"source" : [ "obj-2", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-10", 0 ],
-					"source" : [ "obj-5", 0 ]
+					"destination" : [ "obj-542", 0 ],
+					"source" : [ "obj-545", 0 ]
 				}
 
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "ejw.string.js",
+				"name" : "ejw.list.js",
 				"bootpath" : "~/Externals/Max MSP/ejw-max-msp/js",
 				"patcherrelativepath" : "../js",
 				"type" : "TEXT",

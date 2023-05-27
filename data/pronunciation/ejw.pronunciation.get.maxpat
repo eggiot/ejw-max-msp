@@ -655,14 +655,14 @@
 					"numinlets" : 2,
 					"numoutlets" : 4,
 					"outlettype" : [ "dictionary", "", "", "" ],
-					"patching_rect" : [ 312.0, 344.0, 142.0, 22.0 ],
+					"patching_rect" : [ 312.0, 344.0, 183.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
 					}
 ,
-					"text" : "dict cmudict cmudict.json"
+					"text" : "dict cmudict cmudict.json @quiet"
 				}
 
 			}
@@ -696,7 +696,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-35", 0 ],
-					"midpoints" : [ 362.5, 380.5, 495.5, 380.5 ],
+					"midpoints" : [ 376.166666666666629, 380.5, 495.5, 380.5 ],
 					"source" : [ "obj-19", 1 ]
 				}
 

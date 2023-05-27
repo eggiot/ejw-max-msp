@@ -40,124 +40,134 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"comment" : "String",
-					"id" : "obj-22",
+					"comment" : "",
+					"id" : "obj-5",
 					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 814.0, 303.0, 30.0, 30.0 ]
+					"patching_rect" : [ 40.0, 169.0, 30.0, 30.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-11",
+					"id" : "obj-4",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 814.0, 216.0, 160.0, 22.0 ],
-					"text" : "prepend join_with_separator"
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 247.0, 125.0, 22.0, 22.0 ],
+					"text" : "t 0"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-10",
+					"id" : "obj-3",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 814.0, 262.0, 83.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"filename" : "ejw.string.js",
-						"parameter_enable" : 0
-					}
-,
-					"text" : "js ejw.string.js"
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 40.0, 125.0, 22.0, 22.0 ],
+					"text" : "t 1"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-5",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 985.0, 216.0, 119.0, 22.0 ],
-					"text" : "setprop separator $1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"comment" : "Separator (default: empty)",
 					"id" : "obj-2",
-					"index" : 0,
-					"maxclass" : "inlet",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 985.0, 159.0, 30.0, 30.0 ]
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 40.0, 75.0, 226.0, 22.0 ],
+					"text" : "ejw.pronunciation.modify.lengthen_vowel"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"comment" : "List",
+					"comment" : "",
 					"id" : "obj-1",
 					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 814.0, 159.0, 30.0, 30.0 ]
+					"patching_rect" : [ 40.0, 26.0, 30.0, 30.0 ]
 				}
 
 			}
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-11", 0 ],
+					"destination" : [ "obj-2", 0 ],
 					"source" : [ "obj-1", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-22", 0 ],
-					"source" : [ "obj-10", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-10", 0 ],
-					"source" : [ "obj-11", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-5", 0 ],
+					"destination" : [ "obj-3", 0 ],
 					"source" : [ "obj-2", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-10", 0 ],
-					"source" : [ "obj-5", 0 ]
+					"destination" : [ "obj-4", 0 ],
+					"source" : [ "obj-2", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"source" : [ "obj-4", 0 ]
 				}
 
 			}
  ],
 		"dependency_cache" : [ 			{
+				"name" : "ejw.pronunciation.is_vowel.maxpat",
+				"bootpath" : "~/Externals/Max MSP/ejw-max-msp/data/pronunciation",
+				"patcherrelativepath" : "..",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ejw.pronunciation.modify.lengthen_vowel.maxpat",
+				"bootpath" : "~/Externals/Max MSP/ejw-max-msp/data/pronunciation/modify",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ejw.string.ecils.maxpat",
+				"bootpath" : "~/Externals/Max MSP/ejw-max-msp/string",
+				"patcherrelativepath" : "../../../string",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ejw.string.from-list.maxpat",
+				"bootpath" : "~/Externals/Max MSP/ejw-max-msp/string",
+				"patcherrelativepath" : "../../../string",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "ejw.string.js",
 				"bootpath" : "~/Externals/Max MSP/ejw-max-msp/js",
-				"patcherrelativepath" : "../js",
+				"patcherrelativepath" : "../../../js",
 				"type" : "TEXT",
 				"implicit" : 1
 			}

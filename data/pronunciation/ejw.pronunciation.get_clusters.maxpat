@@ -116,7 +116,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 742.0, 555.0, 117.0, 22.0 ],
+					"patching_rect" : [ 683.0, 539.0, 117.0, 22.0 ],
 					"text" : "s #0-indexed-cluster"
 				}
 
