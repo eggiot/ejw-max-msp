@@ -40,3 +40,8 @@ function split()
 {
 	outlet(0, arguments[0].split(""));
 }
+
+function split_space()
+{
+	outlet(0, arguments[0].split(" "));
+}

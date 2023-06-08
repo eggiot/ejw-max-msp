@@ -40,12 +40,25 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-104",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1056.0, 457.0, 252.0, 22.0 ],
+					"text" : "ejw.pronunciation.modify.can_lengthen_vowel"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-96",
 					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 1501.0, 732.0, 150.0, 47.0 ],
+					"presentation_linecount" : 3,
 					"text" : "8. Non-valid phonemes are sent out of the second output"
 				}
 
@@ -58,6 +71,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 878.0, 746.0, 150.0, 33.0 ],
+					"presentation_linecount" : 2,
 					"text" : "8. Vowels without a stress digit are sent straight out"
 				}
 
@@ -70,6 +84,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 1294.0, 725.0, 150.0, 47.0 ],
+					"presentation_linecount" : 3,
 					"text" : "8. Vowels that had a stress digit attached have that digit reattached"
 				}
 
@@ -82,6 +97,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 856.0, 616.0, 150.0, 33.0 ],
+					"presentation_linecount" : 2,
 					"text" : "7. Get the output of the lengthening dictionary"
 				}
 
@@ -101,12 +117,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-84",
-					"linecount" : 3,
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1169.0, 505.0, 150.0, 47.0 ],
-					"text" : "5. Check if the vowel lengthening dictionary contains the given vowel"
+					"patching_rect" : [ 1175.0, 495.0, 150.0, 33.0 ],
+					"text" : "5. Check if the vowel can be lengthened"
 				}
 
 			}
@@ -235,7 +251,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1321.333333333333258, 672.0, 107.0, 22.0 ],
+					"patching_rect" : [ 1056.0, 528.0, 107.0, 22.0 ],
 					"text" : "s #0-contains-gate"
 				}
 
@@ -247,20 +263,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 1321.333333333333258, 639.0, 29.5, 22.0 ],
+					"patching_rect" : [ 1056.0, 495.0, 29.5, 22.0 ],
 					"text" : "+ 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-41",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1056.0, 505.0, 101.0, 22.0 ],
-					"text" : "prepend contains"
 				}
 
 			}
@@ -555,6 +559,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-54", 0 ],
+					"source" : [ "obj-104", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-29", 1 ],
 					"source" : [ "obj-12", 0 ]
 				}
@@ -681,7 +692,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-41", 0 ],
+					"destination" : [ "obj-104", 0 ],
 					"source" : [ "obj-40", 1 ]
 				}
 
@@ -690,13 +701,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-56", 1 ],
 					"source" : [ "obj-40", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-9", 0 ],
-					"source" : [ "obj-41", 0 ]
 				}
 
 			}
@@ -763,18 +767,18 @@
 				}
 
 			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-54", 0 ],
-					"source" : [ "obj-9", 2 ]
-				}
-
-			}
  ],
 		"dependency_cache" : [ 			{
 				"name" : "ejw.pronunciation.is_vowel.maxpat",
 				"bootpath" : "~/Externals/Max MSP/ejw-max-msp/data/pronunciation",
 				"patcherrelativepath" : "..",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ejw.pronunciation.modify.can_lengthen_vowel.maxpat",
+				"bootpath" : "~/Externals/Max MSP/ejw-max-msp/data/pronunciation/modify",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
