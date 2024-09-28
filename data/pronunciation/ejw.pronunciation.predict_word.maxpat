@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 2,
-			"revision" : 2,
+			"minor" : 6,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -105,7 +105,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1110.0, 576.0, 103.0, 22.0 ],
+					"patching_rect" : [ 1110.0, 576.0, 116.0, 22.0 ],
 					"text" : "r #0-sound-match"
 				}
 
@@ -116,7 +116,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 453.5, 839.0, 105.0, 22.0 ],
+					"patching_rect" : [ 453.5, 839.0, 118.0, 22.0 ],
 					"text" : "s #0-sound-match"
 				}
 
@@ -164,7 +164,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1223.0, 576.0, 91.0, 22.0 ],
+					"patching_rect" : [ 1223.0, 576.0, 104.0, 22.0 ],
 					"text" : "r #0-done-bang"
 				}
 
@@ -175,7 +175,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 907.0, 710.0, 93.0, 22.0 ],
+					"patching_rect" : [ 907.0, 710.0, 106.0, 22.0 ],
 					"text" : "s #0-done-bang"
 				}
 
@@ -187,7 +187,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 907.0, 549.0, 106.0, 22.0 ],
+					"patching_rect" : [ 907.0, 549.0, 119.0, 22.0 ],
 					"text" : "r #0-len-remaining"
 				}
 
@@ -198,7 +198,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 86.5, 875.0, 108.0, 22.0 ],
+					"patching_rect" : [ 86.5, 875.0, 121.0, 22.0 ],
 					"text" : "s #0-len-remaining"
 				}
 
@@ -210,7 +210,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 943.0, 580.0, 100.0, 22.0 ],
+					"patching_rect" : [ 943.0, 580.0, 113.0, 22.0 ],
 					"text" : "r #0-len-of-match"
 				}
 
@@ -221,7 +221,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 341.833333333333314, 839.0, 102.0, 22.0 ],
+					"patching_rect" : [ 341.833333333333314, 839.0, 115.0, 22.0 ],
 					"text" : "s #0-len-of-match"
 				}
 
@@ -293,7 +293,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 86.5, 780.0, 133.0, 22.0 ],
+					"patching_rect" : [ 86.5, 780.0, 146.0, 22.0 ],
 					"text" : "r #0-original-list-to-slice"
 				}
 
@@ -304,7 +304,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 80.5, 375.0, 135.0, 22.0 ],
+					"patching_rect" : [ 80.5, 375.0, 148.0, 22.0 ],
 					"text" : "s #0-original-list-to-slice"
 				}
 
@@ -313,7 +313,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-133",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -364,7 +364,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 309.333333333333258, 268.0, 75.0, 22.0 ],
+					"patching_rect" : [ 309.333333333333258, 268.0, 88.0, 22.0 ],
 					"text" : "r #0-next-list"
 				}
 
@@ -375,7 +375,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 241.0, 880.0, 77.0, 22.0 ],
+					"patching_rect" : [ 241.0, 880.0, 90.0, 22.0 ],
 					"text" : "s #0-next-list"
 				}
 
@@ -459,7 +459,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 468.5, 356.0, 80.0, 22.0 ],
+					"patching_rect" : [ 468.5, 356.0, 93.0, 22.0 ],
 					"text" : "r #0-go-again"
 				}
 
@@ -470,7 +470,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 127.5, 620.0, 82.0, 22.0 ],
+					"patching_rect" : [ 127.5, 620.0, 95.0, 22.0 ],
 					"text" : "s #0-go-again"
 				}
 
@@ -494,7 +494,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 127.5, 529.0, 57.0, 22.0 ],
+					"patching_rect" : [ 127.5, 529.0, 70.0, 22.0 ],
 					"text" : "r #0-gate"
 				}
 
@@ -517,7 +517,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 571.0, 763.0, 59.0, 22.0 ],
+					"patching_rect" : [ 571.0, 763.0, 72.0, 22.0 ],
 					"text" : "s #0-gate"
 				}
 
@@ -539,11 +539,12 @@
 					"id" : "obj-36",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
-					"numoutlets" : 4,
-					"outlettype" : [ "dictionary", "", "", "" ],
+					"numoutlets" : 5,
+					"outlettype" : [ "dictionary", "", "", "", "" ],
 					"patching_rect" : [ 255.5, 685.0, 225.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
+						"legacy" : 1,
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
 					}
@@ -604,7 +605,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-20",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -951,51 +952,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "ejw.iter.all_clusters.maxpat",
-				"bootpath" : "~/Externals/Max MSP/ejw-max-msp/list/iter",
-				"patcherrelativepath" : "../../list/iter",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ejw.string.from-list.maxpat",
-				"bootpath" : "~/Externals/Max MSP/ejw-max-msp/string",
-				"patcherrelativepath" : "../../string",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ejw.string.js",
-				"bootpath" : "~/Externals/Max MSP/ejw-max-msp/js",
-				"patcherrelativepath" : "../../js",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ejw.string.split.maxpat",
-				"bootpath" : "~/Externals/Max MSP/ejw-max-msp/string",
-				"patcherrelativepath" : "../../string",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ejw.string.split_space.maxpat",
-				"bootpath" : "~/Externals/Max MSP/ejw-max-msp/string",
-				"patcherrelativepath" : "../../string",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ejw.string.upper.maxpat",
-				"bootpath" : "~/Externals/Max MSP/ejw-max-msp/string",
-				"patcherrelativepath" : "../../string",
-				"type" : "JSON",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }

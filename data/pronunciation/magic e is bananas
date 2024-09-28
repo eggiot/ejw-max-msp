@@ -1,0 +1,89 @@
+Diphthongs:
+
+    oi: voice
+    ai: raise
+    au: cause
+    ee: beeve
+    ei: seize
+    eo: beode
+    io: biome
+    iu: biune
+    oo: loose
+    ou: house
+    ua: quake
+    ea: leave
+    eu: deuce
+    ia: Diane
+    ie: piece
+    uo: quote
+    oa: goave
+    ui: quite
+    ao: haole
+    ue: queme
+
+Consonant Pairs:
+
+    bl: double
+    dl: needle
+    gl: Beagle
+    tl: beetle
+    ch: gauche
+    nc: bounce
+    rs: course
+    ss: causse
+    rc: source
+    pl: people
+    rg: courge
+    cl: diacle
+    rn: diurne
+    ll: faille
+    cr: faucre
+    zl: foozle
+    rr: fourre
+    rt: fuerte
+    fr: gaufre
+    rd: gourde
+    tt: goutte
+    mp: guimpe
+    ls: hailse
+    nn: Jeanne
+    th: soothe
+    ng: lounge
+    vr: Louvre
+    gr: maigre
+    sl: measle
+    ff: piaffe
+    gy: poogye
+    lp: poulpe
+    sn: puisne
+    rl: quarle
+    tr: quatre
+    ns: quinse
+    nt: quinte
+    nz: quinze
+    kl: raukle
+    rv: sairve
+    lg: tailge
+    lt: Tailte
+    ml: waumle
+
+Task Description:
+
+    Combine Each Diphthong with Every Consonant + Magic 'e':
+        Each of the 19 diphthongs listed above needs to be combined with every single consonant (e.g., b, c, d, etc.) and then with a magic 'e' to form combinations like "ai" + "r" + "e" = "aire."
+
+    Combine Each Diphthong with Every Consonant Pair + Magic 'e':
+        Each of the 19 diphthongs needs to be combined with each of the 43 consonant pairs listed above and then with a magic 'e' to form combinations like "ai" + "bl" + "e" = "aible."
+
+    Combine Each Consonant Pair with Each Individual Vowel + Magic 'e':
+        Each of the 43 consonant pairs needs to be combined with each of the 5 individual vowels (a, e, i, o, u) and then with a magic 'e' to form combinations like "bl" + "a" + "e" = "blae."
+
+This document serves as a reference to ensure that all combinations are systematically accounted for in the task of predicting pronunciation for made-up words or novel combinations. Keep this as a guide to track progress and ensure no combinations are overlooked.
+
+The diphthongs and consonant clusters included in this document have been carefully selected based on their phonetic significance and frequency of occurrence in the English language. The selection process involved analyzing common words where these phonetic elements occur, ensuring that the most relevant and impactful combinations were chosen for inclusion.
+
+Diphthongs were identified as vowel combinations that produce a distinct and blended sound, which significantly influences the pronunciation of words, especially when followed by a consonant and a magic 'e'. The selected diphthongs, such as "ai," "ou," "ie," and others, represent the most common and phonetically rich combinations that occur in English. These have been chosen because they provide a comprehensive coverage of the various vowel blends that impact word pronunciation in predictable yet varied ways.
+
+Consonant Clusters were chosen based on their ability to form meaningful and frequently occurring sound units when paired with vowels or diphthongs and followed by a magic 'e'. The clusters included, such as "bl," "ch," "rn," "tt," and others, represent the most phonetically stable and significant combinations that influence the pronunciation of preceding vowels or diphthongs. These clusters are not just arbitrary combinations of consonants but are carefully selected for their role in shaping the sound of words in the English language.
+
+The goal of focusing on these specific diphthongs and consonant clusters is to ensure that the system can accurately predict the pronunciation of both existing and newly coined words by accounting for the most common and influential phonetic patterns in English. By limiting the scope to these critical combinations, the task remains manageable while still capturing the essential phonetic rules needed for reliable pronunciation prediction.
